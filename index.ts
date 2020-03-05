@@ -1,5 +1,6 @@
 import { of, Observable,  concat } from 'rxjs';
 import { take, filter, first } from 'rxjs/operators';
+import './style.css';
 
 function isSettingValid(setting): boolean {
   return setting !== 'error' ? true : false;
@@ -33,7 +34,6 @@ function getSetting(): Observable<any> {
 getSetting()
   .subscribe((setting) => {
     // Import stylesheets
-import './style.css';
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
